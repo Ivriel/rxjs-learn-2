@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { from, interval, Observable, of } from 'rxjs';
+import { from, interval, Observable, of, take } from 'rxjs';
 
 @Component({
   selector: 'app-rxjs-basic',
@@ -14,7 +14,7 @@ export class RxjsBasicComponent {
 
     cityList2$ = from(["Pune","Mumbai","Nagpur"]);
 
-    myInterval$ = interval(2000);
+    myInterval$ = interval(2000).pipe(take(3));
 
     constructor(){
 

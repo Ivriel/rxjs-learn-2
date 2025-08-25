@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { RxjsBasicComponent } from './components/rxjs-basic/rxjs-basic.component';
 import { RxjsOperatorComponent } from './components/rxjs-operator/rxjs-operator.component';
+import { SubBehReplayComponent } from './components/sub-beh-replay/sub-beh-replay.component';
 
 export const routes: Routes = [
     {
@@ -15,5 +16,9 @@ export const routes: Routes = [
     {
         path:'rxjs-operator',
         component:RxjsOperatorComponent
+    },
+    {
+        path:'subject-behaviour-replay',
+        component:SubBehReplayComponent
     }
 ];

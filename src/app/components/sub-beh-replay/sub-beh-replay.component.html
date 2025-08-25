@@ -1,0 +1,10 @@
+<select name="" id="" (change)="onRoleChange($event)">
+    <option value="Guest">Guest</option>
+    <option value="Admin">Admin</option>
+    <option value="SuperAdmin">Super Admin</option>
+</select>
+
+<form (ngSubmit)="getUser()">
+<input type="number" name="userId" [(ngModel)]="userId" placeholder="Enter id">
+<button type="submit">Get Data</button>
+</form>

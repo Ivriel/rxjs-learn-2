@@ -20,6 +20,12 @@ export class RxjsOperatorComponent {
   searchControl = new FormControl();
 
   constructor(){
+    this.apiService.$roleBehaviour.subscribe((res:string)=> {
+      debugger;
+    })
+    this.apiService.$roleSubject.subscribe((res:string)=> {
+      debugger;
+    })
 
     this.timeInterval.pipe(
       take(6)

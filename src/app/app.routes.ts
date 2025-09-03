@@ -3,6 +3,7 @@ import { RxjsBasicComponent } from './components/rxjs-basic/rxjs-basic.component
 import { RxjsOperatorComponent } from './components/rxjs-operator/rxjs-operator.component';
 import { SubBehReplayComponent } from './components/sub-beh-replay/sub-beh-replay.component';
 import { CombineObsComponent } from './components/combine-obs/combine-obs.component';
+import { RexjsReactiveFormComponent } from './components/rexjs-reactive-form/rexjs-reactive-form.component';
 
 export const routes: Routes = [
     {
@@ -25,5 +26,9 @@ export const routes: Routes = [
     {
         path:'combine-obs',
         component:CombineObsComponent
+    },
+    {
+        path:'rxjs-reactive-form',
+        component:RexjsReactiveFormComponent
     }
 ];

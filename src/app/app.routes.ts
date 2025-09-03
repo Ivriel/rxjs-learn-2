@@ -4,6 +4,7 @@ import { RxjsOperatorComponent } from './components/rxjs-operator/rxjs-operator.
 import { SubBehReplayComponent } from './components/sub-beh-replay/sub-beh-replay.component';
 import { CombineObsComponent } from './components/combine-obs/combine-obs.component';
 import { RexjsReactiveFormComponent } from './components/rexjs-reactive-form/rexjs-reactive-form.component';
+import { UnsubscribeComponent } from './components/unsubscribe/unsubscribe.component';
 
 export const routes: Routes = [
     {
@@ -30,5 +31,9 @@ export const routes: Routes = [
     {
         path:'rxjs-reactive-form',
         component:RexjsReactiveFormComponent
+    },
+    {
+        path:'unsubscribe-rxjs',
+        component:UnsubscribeComponent
     }
 ];
